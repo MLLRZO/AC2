@@ -1,0 +1,119 @@
+.lista {
+  margin-top: 25px;
+}
+
+.contadores {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.contador {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.contador strong {
+  font-size: 26px;
+}
+
+.aberto {
+  background: #feffdf;
+  color: #a1a608;
+}
+
+.devolvido {
+  background: #e5fff1;
+  color: #2da569;
+}
+
+.emprestimo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+  padding: 18px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.informacoes h3 {
+  margin-top: 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-aberto {
+  background: #feffdf;
+  color: #a1a608;
+}
+
+.status-devolvido {
+  background: #e5fff1;
+  color: #2da569;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 160px;
+}
+
+button {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao-devolver {
+  background: #ffdfdf;
+  color: #a60808;
+}
+
+.botao-remover {
+  background: #e7e7e7;
+  color: #333;
+}
+
+.riscado {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.vazio {
+  padding: 28px;
+  text-align: center;
+  background: #f7f7f7;
+  border-radius: 10px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .contadores {
+    grid-template-columns: 1fr;
+  }
+
+  .emprestimo {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .acoes {
+    width: 100%;
+  }
+}
